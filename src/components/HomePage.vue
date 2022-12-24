@@ -15,10 +15,7 @@
             <v-progress-linear color="deep-purple" height="10" indeterminate></v-progress-linear>
         </template>
 
-        <v-img height="250" src="../assets/map.png"></v-img>
-        <!-- <GmapMap :center="{lat:10, lng:10}" :zoom="7" map-type-id="terrain" style="width: 500px; height: 300px">
-            <GmapMarker :key="index" v-for="(m, index) in markers" :position="m.position" :clickable="true" :draggable="true" @click="center=m.position" />
-        </GmapMap> -->
+        <iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" :src="'https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q='+ detail.lat+','+detail.lon +'&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed'"><a href="https://www.maps.ie/distance-area-calculator.html">measure distance on map</a></iframe>
 
         <v-divider class="mx-4"></v-divider>
 
